@@ -1,0 +1,6 @@
+run = "npm run dev"
+entrypoint = "src/main.tsx"
+
+[deployment]
+run = ["sh", "-c", "npm run build && npm start"]
+deploymentTarget = "reserved-vm"
